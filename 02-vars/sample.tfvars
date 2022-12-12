@@ -1,1 +1,1 @@
-empty = yes
+empty = "yes"
