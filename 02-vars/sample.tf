@@ -56,3 +56,10 @@ variable "krishan" {
 output "krishan" {
     value = "name is ${var.krishan["name"]} designation is ${var.krishan["designation"]}"
 }
+
+variable "empty" {
+}
+
+output "empty" {
+  value = var.empty
+}
