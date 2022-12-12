@@ -33,3 +33,26 @@ output "ex-list-output" {
     value = "${var.ex-list-output["duration"]} ${var.ex-list-output["trainer"]}" 
   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+variable "krishan" {
+  default = {
+    name = "krishan"
+    designation = "CEO"
+  }
+}
+
+output "krishan" {
+    value = "name is ${var.krishan["name"]} designation is ${var.krishan["designation"]}"
+}
