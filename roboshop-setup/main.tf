@@ -11,9 +11,9 @@ module "Mongodb" {
   
 }
 
-module "Mongodb" {
+module "rabitmq" {
     source      = "./ec2"
-    COMPONENT   = "Mongodb"
+    COMPONENT   = "rabitmq"
     APP_VERSION = "0.0.2"
   
 }
