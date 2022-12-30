@@ -25,6 +25,8 @@ resource "aws_security_group" "allow_ssh" {
   }
 }
 
+variable "vpc_id" {}
+
 output "sgid" {
     value = "aws_security_group.allow_ssh1.id"
   
