@@ -1,9 +1,8 @@
 resource "aws_security_group" "allow_ssh" {
     name        = "allow_ssh"
     description = "Allow SSH inboud trffic"
-    vpc_id      = aws.vpc.main.id 
-
-    ingress = {
+    
+        ingress = {
       description       = "allow_ssh"
       from_port         = 22
       to_port           = 22
