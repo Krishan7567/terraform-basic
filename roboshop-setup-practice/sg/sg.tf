@@ -1,8 +1,7 @@
 resource "aws_security_group" "allow_ssh" {
   name        = "allow_ssh1"
   description = "Allow ssh1 inbound traffic"
-  vpc_id      = aws_vpc.main.id
-
+  
   ingress {
     description      = "allow_ssh1"
     from_port        = 22
@@ -24,8 +23,6 @@ resource "aws_security_group" "allow_ssh" {
     Name = "allow_ssh1"
   }
 }
-
-variable "vpc_id" {}
 
 output "sgid" {
     value = "aws_security_group.allow_ssh1.id"
