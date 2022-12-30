@@ -26,8 +26,7 @@
 
 # Creates EC2 Instance 
 resource "aws_instance" "app" {
-  #ami                        = data.aws_ami.myami.image_id
-  instance_type              = "t2.micro"
+  instance_type    = "t2.micro"
 
   tags = {
     Name = "my-app"
